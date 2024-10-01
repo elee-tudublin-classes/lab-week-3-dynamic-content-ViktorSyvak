@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<!-- Load common head content, including the favicon link -->
+    {% include "./partials/head.html" ignore missing with context %}
+    <title>Home Page</title>
+</head>
+<body>
+    <!-- include navbar from partials -->
+    {% include "./partials/nav.html" ignore missing with context %}
+
+    <h1>Dynamic content Examples</h1>
+
+    <!-- Load common CSS and JS -->
+    {% include "./partials/dependencies.html" ignore missing with context %}
+
+
+    <h1>Dynamic Content Page</h1>
+    <div class="timeblock">
+        <h3>Server Time:</h3>
+        <h4 id="serverTime"{{serverTime}}></h4>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+
+</body>
+</html>
