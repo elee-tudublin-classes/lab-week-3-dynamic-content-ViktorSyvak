@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+.h1 {
+    color: red;
+}
+
+#browserTime {
+    color: blue;
+}
+
+#serverTime {
+    color: green;
+}
+
+.alert {
+    background-color: lightblue;
+    border: 1px solid #b2ebf2;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.body {
+    color: red;
+}
+
+.timeBlock {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
