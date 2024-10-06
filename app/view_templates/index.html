@@ -11,23 +11,28 @@
     {% include "./partials/head.html" ignore missing with context %}
     <title>Home Page</title>
 </head>
+
 <body>
     <!-- include navbar from partials -->
     {% include "./partials/nav.html" ignore missing with context %}
 
     <h1>Dynamic content Examples</h1>
+    <div class="timeblock">
+        <h3>Server Time:</h3>
+        <h4 id="serverTime">{{serverTime}}</h4>
+    </div>
+
+
+    <div class="timeblock">
+        <h3>Browser Time:</h3>
+        <h4 id="browserTime">{{browserTime}}</h4>
+    </div>
 
     <!-- Load common CSS and JS -->
     {% include "./partials/dependencies.html" ignore missing with context %}
 
-
-    <h1>Dynamic Content Page</h1>
-    <div class="timeblock">
-        <h3>Server Time:</h3>
-        <h4 id="serverTime"{{serverTime}}></h4>
-    </div>
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/script.js"></script>
+    <script src="static/js/browserTime.js"></script>
 </body>
 </html>
